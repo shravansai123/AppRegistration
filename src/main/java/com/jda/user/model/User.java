@@ -13,6 +13,19 @@ public class User implements Serializable {
 	private String firsname;
 	private String lastname;
 	private String mobile;
+	private String token;
+	public String getFirsname() {
+		return firsname;
+	}
+	public void setFirsname(String firsname) {
+		this.firsname = firsname;
+	}
+	public String getToken() {
+		return token;
+	}
+	public void setToken(String token) {
+		this.token = token;
+	}
 	public String getEmail() {
 		return email;
 	}
@@ -45,8 +58,8 @@ public class User implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "User [email=" + email + ", password=" + password + ", firstname=" + firsname + ", lastname=" + lastname
-		      + ", mobile=" + mobile + "]";
+		return "User [email=" + email + ", password=" + password + ", firsname=" + firsname + ", lastname=" + lastname
+		      + ", mobile=" + mobile + ", token=" + token + "]";
 	}
 	
 }
